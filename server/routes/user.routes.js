@@ -4,7 +4,7 @@ const {register, login, uploadData, getData} = require('../controllers/user.cont
 const multer = require('../config/multer.config');
 const verifyToken = require("../middleware/user.authenticate");
 
-route.use((req, res, next) => {
+router.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "*");
     next();

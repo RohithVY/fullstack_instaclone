@@ -10,7 +10,6 @@ import ProtectedRoutes from "./components/ProtectedRoutes";
 
 const App = () => {
   return (
-    <div className="wrapper">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -21,7 +20,6 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
   );
 };
 const root = ReactDOM.createRoot(document.getElementById("root"));

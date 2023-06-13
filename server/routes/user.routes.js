@@ -12,4 +12,8 @@ router.post('/post', multer.single('image'), verifyToken, uploadData)
 
 router.get('/get',verifyToken, getData)
 
+router.get('/',(req, res) => {
+    res.send('app is accessing get route')
+})
+
 module.exports = router

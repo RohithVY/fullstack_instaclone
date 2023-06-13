@@ -5,7 +5,8 @@
   "main": "App.js",
   "scripts": {
     "test": "Mocha",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Rohith",
   "license": "ISC",

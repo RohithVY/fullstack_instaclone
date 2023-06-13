@@ -15,7 +15,7 @@ const Register = () => {
       setPrompt("fail");
       return;
     }
-    fetch(`${process.env.URL}/user/register`, {
+    fetch(`${process.env.BACKENDURL}/user/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const HomePage = () => {
     }
   
     const token = window.localStorage.getItem("token");
-    fetch(`${process.env.URL}/user/get`, {
+    fetch(`${process.env.BACKENDURL}/user/get`, {
       headers: {
         Authorization: token, 
       },

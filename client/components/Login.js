@@ -12,7 +12,7 @@ const Login = () => {
   async function handleLogin(e) {
     e.preventDefault();
     window.localStorage.removeItem("token");
-    await fetch(`${process.env.URL}/user/login`, {
+    await fetch(`${process.env.BACKENDURL}/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

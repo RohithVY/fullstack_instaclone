@@ -14,7 +14,7 @@ const UploadForm = () => {
     formData.append("title", title);
     formData.append("description", description);
     formData.append("image", file);
-    await fetch(`${process.env.URL}/user/post`, {
+    await fetch(`${process.env.BACKENDURL}/user/post`, {
       method: "POST",
       headers: {
         Authorization: window.localStorage.getItem("token"),

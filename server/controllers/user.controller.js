@@ -53,7 +53,7 @@ const login = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
   // let currentUser;
   await userModel.findOne({ email }).then(async (user) => {
-    if (!user || user.id) {
+    if (!user || !user.id) {
       res.status(404);
       res.json({
         status: 404,

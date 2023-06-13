@@ -10,8 +10,8 @@ import ProtectedRoutes from "./components/ProtectedRoutes";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="wrapper">
+    <div className="wrapper">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -20,8 +20,8 @@ const App = () => {
             <Route path="/form" element={<UploadForm />} />
           </Route>
         </Routes>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 };
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -2,7 +2,6 @@
   "name": "cheap-instaclone-knockoff",
   "version": "1.0.0",
   "description": "An image uploading and viewing app with user authentication",
-  "main": "index.html",
   "scripts": {
     "test": "Mocha",
     "start": "parcel index.html",
